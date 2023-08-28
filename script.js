@@ -19,13 +19,15 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 var swiper2 = new Swiper(".mySwiper2", {
-    loop: true,
-    slidesPerView: 2,
-    spaceBetween: 60,
-    centeredSlides: true,
+    slidesPerView: 4,
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination2",
+        clickable: true,
+    },
     breakpoints: {
         900: {
-            slidesPerView: 4,
+            slidesPerView: 5,
             spaceBetween: 60
         },
     }

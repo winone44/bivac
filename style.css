@@ -117,6 +117,26 @@ h3 {
 
 /* </navbar> */
 
+/* <our-travels> */
+.our-travels {
+    background-color: var(--dark-blue-gray);
+    margin: 40px;
+    padding: 30px;
+}
+
+.mySwiperSlide2 {
+
+}
+
+.mySwiperSlide2 > img {
+    border: 5px solid var(--white);
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+/* </our-travels> */
+
 /* <our-stories> */
 
 .our-stories {
@@ -134,7 +154,7 @@ h3 {
 }
 
 .our-store-img {
-    border: 5px solid var(--dark-blue-gray)
+    border: 5px solid var(--dark-blue-gray);
 }
 
 .our-store-img > img {

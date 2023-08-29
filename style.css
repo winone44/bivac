@@ -632,7 +632,29 @@ textarea:focus-within {
 
     /* </categories> */
 
+
+    /* <our-travels> */
+    .our-travels {
+        margin: 0;
+        padding: 30px 0 30px 30px;
+    }
+
+    /* </our-travels>*/
+
+    /* <about-our-products> */
+
+    .about-our-products {
+        margin: 0;
+    }
+
+
+    /* </about-our-products> */
+
     /* <our-stories> */
+
+    .our-stories {
+        padding: 0 30px;
+    }
 
 
     .our-stories-grid-wrapper {
@@ -646,8 +668,16 @@ textarea:focus-within {
     /* <footer> */
 
     footer {
-        padding: 100px 50px 50px;
+        padding: 80px 30px 30px;
         flex-direction: column;
+    }
+
+    footer > header > p {
+        font-size: 1rem;
+    }
+
+    .footer-socials-icon {
+        margin: 30px 30px;
     }
 
     .footer-contact-column {

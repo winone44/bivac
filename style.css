@@ -20,15 +20,15 @@ p {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 /* <top-contact> */
@@ -117,6 +117,174 @@ h3 {
 
 /* </navbar> */
 
+/* <first-section> */
+
+.first-section {
+    min-height: 80vh;
+}
+
+.main-slider {
+    width: 100%;
+    min-height: 80vh;
+}
+
+.main-slider .swiper-slide {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+}
+
+.swiper-slide .img-container {
+    width: 400px;
+    height: 300px;
+    transform: translateX(50px);
+    opacity: 0;
+    border: 4px solid var(--dark-blue-gray);
+}
+
+.swiper-slide-active .img-container {
+    transform: translateX(0);
+    opacity: 1;
+    transition: 1s ease;
+    transition-delay: 0.3s;
+    transition-property: transform, opacity;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.swiper-slide .text-content {
+    padding: 10px;
+    color: var(--black);
+    margin: 0 50px;
+    width: 50%;
+    background-color: var(--white);
+    transform: translateY(-50px);
+    opacity: 0;
+}
+
+.swiper-slide-active .text-content {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 1s ease;
+    transition-delay: 0.3s;
+    transition-property: transform, opacity;
+}
+
+.text-content > p {
+    /*font-size: 1rem;*/
+}
+
+.swiper-slide .contact-btn {
+    background-color: var(--dark-blue-gray);
+    color: var(--white);
+    border: 0;
+    margin: 10px 0;
+    padding: .5em 2em;
+    border-radius: 45px 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.swiper-slide .contact-btn:hover {
+    transform: scale(0.9);
+}
+
+/* </first-section> */
+
+/* <categories> */
+
+.categories {
+    margin: 40px
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--dark-blue-gray);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Pozycja */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.category-item-1 {
+    grid-area: item1;
+}
+
+.category-item-2 {
+    grid-area: item2;
+}
+
+.category-item-3 {
+    grid-area: item3;
+}
+
+.category-item-4 {
+    grid-area: item4;
+}
+
+.category-item-5 {
+    grid-area: item5;
+}
+
+.category-img {
+    position: relative;
+    border: 5px solid var(--dark-blue-gray);
+}
+
+.category-img > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+.categories-grid-wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+            "item1 item1 item2 item4"
+            "item1 item1 item2 item5"
+            "item1 item1 item3 item5"
+;
+}
+
+
+/* </categories> */
+
 /* <our-travels> */
 .our-travels {
     background-color: var(--dark-blue-gray);
@@ -136,6 +304,32 @@ h3 {
     background-size: cover;
 }
 /* </our-travels> */
+
+/* <about-our-products> */
+.about-our-products {
+    display: flex;
+    margin: 40px;
+}
+
+.about-our-products-header-box {
+    border-top: 80px solid white;
+    color: var(--white);
+    background-color: var(--dark-blue-gray);
+}
+
+.about-our-products-header-box > header {
+    padding: 30px;
+}
+
+.about-our-products-img-box {
+    border: 10px solid var(--dark-blue-gray);
+}
+
+.about-our-products-img-box > img {
+    display: block;
+}
+
+/* </about-our-products> */
 
 /* <our-stories> */
 
@@ -307,11 +501,11 @@ textarea:focus-within {
 @media screen and (max-width: 900px) {
 
     h1 {
-        font-size: 3rem;
+        font-size: 1.8rem;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.4em;
     }
 
     h3 {

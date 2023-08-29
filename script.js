@@ -10,9 +10,12 @@ document.getElementById("mobile-menu-trigger").addEventListener("click", functio
 
 
 // Swiper config
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".main-slider", {
     loop: true,
     spaceBetween: 0,
+    autoplay: {
+        delay: 2500,
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,

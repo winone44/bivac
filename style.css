@@ -236,6 +236,32 @@ button {
     border: 2px solid #bdbdbd;
 }
 
+.contact-icons{
+    position: absolute;
+    z-index: 999;
+    right: 20px;
+    bottom: 120px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-icons svg {
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contact-icons svg {
+    color: var(--white);
+}
+
+.contact-icons svg:hover {
+    color: gray;
+}
+
 .scroll-button {
     position: absolute;
     z-index: 9999;
@@ -699,6 +725,14 @@ textarea:focus-within {
 
     .swiper-slide-active .img-container {
         display: none;
+    }
+
+    .contact-icons svg {
+        color: var(--black);
+    }
+
+    .contact-icons svg:hover {
+        color: gray;
     }
 
     /* </first-section> */

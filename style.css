@@ -359,6 +359,16 @@ button {
     background-size: cover;
 }
 
+.category-img > header {
+    position: absolute;
+    color: var(--white);
+    padding: 10px;
+}
+
+.category-item-3 > header {
+    bottom: 0;
+}
+
 .categories-grid-wrapper {
     display: grid;
     gap: 10px;
@@ -739,6 +749,10 @@ textarea:focus-within {
 
 
     /* <categories> */
+
+    .category-item-3 > header {
+        bottom: initial;
+    }
 
     .categories {
         margin: 30px;

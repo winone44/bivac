@@ -35,3 +35,11 @@ var swiper2 = new Swiper(".mySwiper2", {
         },
     }
 });
+
+//scroll-behavior
+function scrollToCategories() {
+    const element = document.querySelector('.categories');
+    if (element) {
+        element.scrollIntoView({behavior: 'smooth'});
+    }
+}

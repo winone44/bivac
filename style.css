@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Red+Hat+Display:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Brevia';
+    src: url('./assets/font/HvDTrial_Brevia-Bold-BF6493a4067c1a1.otf');
+    font-weight: Bold;
+}
+
 
 :root {
     --white: white;
     --black: black;
     --dark-blue-gray: #1b2026;
+    font-family: 'Arimo', sans-serif;
+    --swiper-pagination-color: #bdbdbd;
+    --swiper-pagination-bullet-inactive-color: rgba(0,0,0,0);
+    --swiper-pagination-bullet-inactive-opacity: 1;
 }
 
 
@@ -10,25 +22,31 @@ body {
     margin: 0;
 }
 
-h1, h2, h3, h4 p {
+h1, h2, h3, h4 {
     margin-block-start: 0;
     margin-block-end: 0;
+    font-family: 'Brevia', sans-serif;
 }
 
 p {
     margin: 5px 0 0;
+    font-size: 1.5rem;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1.5rem;
 }
 
 /* <top-contact> */
@@ -40,6 +58,7 @@ h3 {
 }
 
 .top-contact > a {
+    font-family: 'Brevia', sans-serif;
     color: var(--black);
     text-decoration: none;
     font-weight: bold;
@@ -81,6 +100,7 @@ h3 {
 
 
 #nav-links a {
+    font-family: 'Brevia', sans-serif;
     display: block;
     padding: 20px;
     text-decoration: none;
@@ -94,6 +114,7 @@ h3 {
 
 #nav-links a:hover {
     color: gray;
+    text-decoration: underline;
 }
 
 #nav-links .horizontal-line {
@@ -131,12 +152,12 @@ h3 {
 .main-slider .swiper-slide {
     display: flex;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
 }
 
 .swiper-slide .img-container {
-    width: 400px;
-    height: 300px;
+    width: 50vw;
+    height: 90%;
     transform: translateX(50px);
     opacity: 0;
     border: 4px solid var(--dark-blue-gray);
@@ -177,7 +198,17 @@ h3 {
     transition-property: transform, opacity;
 }
 
+.text-content > h1 {
+    font-family: 'Brevia', sans-serif;
+    font-weight: bold;
+}
+
+.text-content > hr {
+    float: left;
+}
+
 .text-content > p {
+    clear: both;
     /*font-size: 1rem;*/
 }
 
@@ -196,6 +227,36 @@ h3 {
     transform: scale(0.9);
 }
 
+.first-section .swiper-pagination {
+    text-align: left !important;
+    margin: 0 50px;
+}
+
+.first-section .swiper-pagination-bullet {
+    border: 2px solid #bdbdbd;
+}
+
+.scroll-button {
+    position: absolute;
+    z-index: 9999;
+    width: 80px;
+    height: 80px;
+    background-color: var(--dark-blue-gray);
+    border-radius: 45px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    left: 50%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+.scroll-button > svg {
+    width: 80px;
+    height: 80px;
+}
 /* </first-section> */
 
 /* <categories> */
@@ -330,6 +391,15 @@ h3 {
     background-position: center;
     background-size: cover;
 }
+
+.swiper-pagination2 {
+    position: initial;
+    text-align: center;
+}
+
+.our-travels .swiper-pagination-bullet {
+    border: 2px solid #bdbdbd;
+}
 /* </our-travels> */
 
 /* <about-our-products> */
@@ -347,6 +417,10 @@ h3 {
 
 .about-our-products-header-box > header {
     padding: 30px;
+}
+
+.about-our-products-header-box > header > h1 {
+    font-family: 'Brevia', sans-serif;
 }
 
 .about-our-products-header-box > header > button {
@@ -383,12 +457,16 @@ h3 {
 /* <our-stories> */
 
 .our-stories {
-    padding: 0 40px;
+    padding: 20px 40px;
 }
 
 .our-stories > header {
     margin: 30px 0;
     text-align: center;
+}
+
+.our-stories > header > h1 {
+    font-family: 'Brevia', sans-serif;
 }
 
 .our-stories-grid-wrapper {
@@ -427,7 +505,7 @@ footer > header {
 }
 
 footer > header > p {
-    font-size: 1.8rem;
+    margin-top: 30px;
 }
 
 .footer-contact-column {
@@ -559,6 +637,14 @@ textarea:focus-within {
     }
 
     h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
         font-size: 1rem;
     }
 

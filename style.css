@@ -180,6 +180,10 @@ button {
     pointer-events: none;
 }
 
+.img-container-logo {
+    position: absolute;
+}
+
 .swiper-slide .text-content {
     padding: 10px;
     color: var(--black);
@@ -365,6 +369,10 @@ button {
     padding: 10px;
 }
 
+.category-item-1-logo {
+    position: absolute;
+}
+
 .category-item-3 > header {
     bottom: 0;
 }
@@ -408,6 +416,7 @@ button {
     background-color: var(--dark-blue-gray);
     margin: 40px;
     padding: 30px;
+    position: relative;
 }
 
 .our-travels > header > h1 {
@@ -436,6 +445,17 @@ button {
 .our-travels .swiper-pagination-bullet {
     border: 2px solid #bdbdbd;
 }
+
+.our-travels-logo {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.our-travels-logo > img {
+    width: 100%;
+}
 /* </our-travels> */
 
 /* <about-our-products> */
@@ -449,14 +469,16 @@ button {
     color: var(--white);
     background-color: var(--dark-blue-gray);
     width: 80%;
+    position: relative;
 }
 
 .about-our-products-header-box > header {
     padding: 30px;
+
 }
 
 .about-our-products-header-box > header > h1 {
-    font-family: 'Brevia', sans-serif;
+    width: 60%;
 }
 
 .about-our-products-header-box > header > button {
@@ -475,8 +497,20 @@ button {
     transform: scale(0.9);
 }
 
+.about-our-products-header-box-logo {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 120px;
+}
+
+.about-our-products-header-box-logo > img {
+    width: 100%;
+}
+
 .about-our-products-img-box {
     border: 10px solid var(--dark-blue-gray);
+    position: relative;
 }
 
 .about-our-products-img-box > img {
@@ -486,6 +520,17 @@ button {
     object-fit: cover;
     background-position: center;
     background-size: cover;
+}
+
+.about-our-products-img-box-logo {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: 120px;
+}
+
+.about-our-products-img-box-logo > img {
+    width: 100%;
 }
 
 /* </about-our-products> */
@@ -791,6 +836,14 @@ textarea:focus-within {
     .about-our-products-header-box {
         border-top: 0;
         width: 70%;
+    }
+
+    .about-our-products-header-box-logo {
+        width: 80px;
+    }
+
+    .about-our-products-img-box-logo {
+        width: 80px;
     }
 
 
